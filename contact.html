@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<!-- 
+		Final Project CMIS 410
+		Author: Keith Forte
+		Date: 11/11/24
+		
+		These web pages are for educational purposes only, all content should be considered fictional. 
+	
+	-->
+
+<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8" />
+<title>Keef's Kuts</title>
+   <link href="css/styles.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+<div id = "container"> 
+
+<header>
+    <a href="index.html"><img src="images/LOGOst.png" alt="Keef's Kuts logo" id="logoimg" /></a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <h1>Contact Us</h1>
+    <p>Thank you for visiting Keef's Kuts! Please fill out the form below to get in touch with us. We would love to hear from you!</p>
+    <p><strong>Required fields are marked by an asterisk (*).</strong></p>
+
+    <form id="contactForm" action="#" method="post">
+        <!-- Customer Information -->
+        <fieldset id="custInfo">
+            <legend>Customer Information</legend>
+            
+            <div class="formRow">    
+                <label for="name">Name*</label>
+                <input name="custName" id="name" type="text" placeholder="Your Name" required />
+            </div>
+
+            <div class="formRow">    
+                <label for="email">Email*</label>
+                <input name="custEmail" id="email" type="email" placeholder="Your Email" required />
+            </div>
+
+            <div class="formRow">    
+                <label for="phone">Phone Number</label>
+                <input name="custPhone" id="phone" type="tel" placeholder="(xxx) xxx-xxxx" />
+            </div>
+        </fieldset>
+        
+        <!-- Message Section -->
+        <fieldset id="messageInfo">
+            <legend>Your Message</legend>
+
+            <div class="formRow">
+                <label for="message">Message*</label>
+                <textarea name="custMessage" id="message" placeholder="Your message..." required></textarea>
+            </div>
+
+            <div class="formRow">
+                <input name="subscribe" id="subscribe" value="yes" type="checkbox" />
+                <label for="subscribe">Subscribe to our newsletter for updates and promotions!</label>
+            </div>
+
+            <div id="buttons">
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Cancel" />
+            </div>
+        </fieldset>
+    </form>
+</section>
+
+<footer>
+    <p>Keef's Kuts<br />
+    123 Main Street &bull; Omaha, NE 68106<br />
+    <a href="https://facebook.com" target="_blank">Facebook</a> | <a href="https://Instagram.com" target="_blank">Instagram</a> | <a href="tel:555-555-5555">Telephone</a> | <a href="mailto:keef@keefskutz.com">Email Us</a></p>
+</footer>
+
+</body>
+</html>
